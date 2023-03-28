@@ -31,7 +31,7 @@
 
 <form on:submit|preventDefault={add}>
 
-     <input bind:value={listItem} type="text" autofocus/><button type="submit">Add</button>
+     <input class="input" bind:value={listItem} type="text" autofocus/><button type="submit">Add</button>
 
 </form>
 
@@ -60,6 +60,7 @@
           color: aliceblue;
           padding: 0.75vh;
           border: none;
+          margin: 2vh;
 
      }
 
@@ -69,9 +70,16 @@
 
      }
 
+     
+
      ul {
           list-style: none;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
+          padding: 2vh;
+     }
+
+     .input{
+          padding: 4vh;
      }
 
      .done{
